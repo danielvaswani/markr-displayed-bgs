@@ -1,8 +1,160 @@
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+  background-color: whitesmoke;
+  scroll-behavior: smooth;
+  font-family: 'Oswald', sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 18%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #101B37;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 24px;
+  color: white;
+  display: block;
+}
+
+.sidenav a:hover {
+  text-decoration: underline;
+  text-decoration-color: #ffd700;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  left: 4.5%;
+  top: 4%;
+}
+
+.Subtitle {
+  color: white;
+  margin-left: 10%;
+  margin-top: 30%;
+  font-size: 30px;
+}
+
+.imgfront {
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 4s;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 7px;
+  box-shadow: 6px 6px 12px #b8b8b8,
+    -6px -6px 12px #ffffff;
+  background-color: #101B37;
+  padding: 20px;
+  margin-top:10%;
+  margin-bottom: 10%;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+h1 {
+  text-align: left;
+  font-size: 50px;
+}
+
+p {
+  text-align: justify;
+  line-height: 1.5;
+  white-space: pre-line;
+  font-family: 'Merriweather', serif;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.color {
+  width: 200px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  box-shadow:  6px 6px 12px #b8b8b8,
+               -6px -6px 12px #ffffff;
+}
+
+.ImagesImagery {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  width: 500px;
+  height: 500px;
+  background-color: #293494;
+  border-radius: 33px;
+  box-shadow: 23px 23px 26px #c5c5c5,
+    -23px -23px 26px #fbfbfb;
+}
+
+.ImagesAE {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  width: 500px;
+  height: 500px;
+  background-color: #293494;
+  border-radius: 33px;
+  box-shadow: 23px 23px 26px #c5c5c5,
+    -23px -23px 26px #fbfbfb;
+}
+
+.colortext {
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  font-size: 35px;
+  font-family: 'Oswald', sans-serif
+}
+.logos{
+margin: 3%;
+}
+.colorcontainer{
+display:  flex;
+flex-direction: row;
+gap: 30%;
+margin-left: 20%;
+margin-right: 20%;
+}
+.Merriweather{
+  font-family: 'Merriweather', serif;
+}
+.oswald{
+font-family: 'Oswald', sans-serif;
+}
+
+#color-yellow{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: white;
+  float: left;
 }

@@ -2,10 +2,25 @@ import "./style.css";
 
 import Page from "./components/Page";
 
-fetch("https://markr-admin-server.vercel.app/api/brandguides/Johnnie%20Walker/")
+const host = window.location.host;
+console.log(host);
+const subdomain = host.split(".")[0];
+
+const bgsName =
+  host !== "localhost:3000" && host !== "127.0.0.1:3000"
+    ? subdomain
+    : "johnniewalker";
+
+const API = import.meta.env.VITE_API;
+
+fetch(`${API}/api/brandguides/${bgsName}?subdomain=true`)
   //parsing the json
-  .then((response) => response.json())
+  .then((response) => {
+    console.log(response);
+    return response.json();
+  })
   .then((data) => {
+    console.log(data);
     createApp(data.pages);
   });
 

@@ -2,6 +2,7 @@ import ColorAsset from "./ColorAsset";
 import VideoAsset from "./VideoAsset";
 import ImageAsset from "./ImageAsset";
 import TextAsset from "./TextAsset";
+import IFrameAsset from "./IFrameAsset";
 
 function Asset(asset) {
   switch (asset.type) {
@@ -13,6 +14,8 @@ function Asset(asset) {
       return ImageAsset(asset);
     case "text":
       return TextAsset(asset);
+    case "iframe":
+      return IFrameAsset(asset);
     default:
       break;
   }

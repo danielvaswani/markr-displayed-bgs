@@ -11,7 +11,7 @@ function Page(page) {
 
   for (const assetIndex in page.Assets) {
     const asset = page.Assets[assetIndex];
-    newPage.appendChild(Asset(asset));
+    asset.type === "iframe" ? newPage.innerHTML += Asset(asset) : newPage.appendChild(Asset(asset));
   }
   return newPage;
 }

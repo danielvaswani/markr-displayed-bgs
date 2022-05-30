@@ -1,4 +1,5 @@
 import "./style.css";
+import doSleep from "./utils";
 
 import Page from "./components/Page";
 
@@ -24,15 +25,22 @@ fetch(`${API}/api/brandguides/${bgsName}?subdomain=true`)
     createApp(data.pages);
   });
 
-function createApp(pages) {
-  for (const pageIndex in pages) {
-    const page = pages[pageIndex];
+async function createApp(pages) {
+  setTimeout(() => {
+    document.getElementById('mySidenav').innerHTML = "";
 
-    addLinkToNav(page.name);
 
-    document.body.appendChild(Page(page));
-  }
-}
+    for (const pageIndex in pages) {
+      const page = pages[pageIndex];
+  
+      addLinkToNav(page.name);
+  
+      document.body.appendChild(Page(page));
+    }
+  },1750);
+  // await doSleep(1500) .then(()=>{
+    
+  };
 
 function addLinkToNav(link) {
   const newPageLink = document.createElement("a");

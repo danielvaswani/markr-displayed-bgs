@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  background-color: #0d071c;
+  overflow: hidden;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Gilroy Light";
+  src: url(assets/Gilroy-Light.otf) format("truetype");
+}
+
+@font-face {
+  font-family: "Gilroy Extrabold";
+  src: url(assets/Gilroy-ExtraBold.otf) format("truetype");
+}
+
+.paragraph-1 {
+  color: #e189d9;
+  font-family: "Gilroy Light";
+  text-align: center;
+  position: absolute;
+  bottom: 35%;
+  right: 55%;
+  font-size: 2rem;
+}
+
+.paragraph-2 {
+  color: #e189d9;
+  font-family: "Gilroy Light";
+  text-align: center;
+  position: absolute;
+  bottom: 30%;
+  right: 36.5%;
+  font-size: 2rem;
+}
+.Logo{
+ position: absolute;
+ left: 2%;
+ top: 2%;
+}
+.dot {
+  animation: openclose 3s ease-in-out;
+  animation-fill-mode: forwards;
+  position: absolute;
+  font-size: 350px;
+  right: 18%;
+  top: 4%;
+  color: white;
+  font-family: "Gilroy Extrabold";
+}
+
+.lineUp {
+  animation: 4s anim-lineUp ease-out;
+  position: absolute;
+  font-size: 380px;
+  right: 29%;
+  color: #e189d9;
+  font-family: "Gilroy Extrabold";
+}
+
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes openclose {
+  0% {
+    width: 0;
+  }
+
+  10% {
+    width: 10px;
+  }
+
+
+  100% {
+    width: 150px;
+  }
+}

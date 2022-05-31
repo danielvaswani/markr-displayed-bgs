@@ -24,14 +24,19 @@ fetch(`${API}/api/brandguides/${bgsName}?subdomain=true`)
     createApp(data.pages);
   });
 
-function createApp(pages) {
-  for (const pageIndex in pages) {
-    const page = pages[pageIndex];
+async function createApp(pages) {
+  setTimeout(() => {
+    document.getElementById("mySidenav").innerHTML = "";
 
-    addLinkToNav(page.name);
+    for (const pageIndex in pages) {
+      const page = pages[pageIndex];
 
-    document.body.appendChild(Page(page));
-  }
+      addLinkToNav(page.name);
+
+      document.body.appendChild(Page(page));
+    }
+  }, 700);
+  // await doSleep(1500) .then(()=>{
 }
 
 function addLinkToNav(link) {

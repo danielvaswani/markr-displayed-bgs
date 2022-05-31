@@ -3,7 +3,7 @@ import rgbToHex from "../utils";
 function ColorAsset(color) {
   const colorElement = document.createElement("div");
 
-  const colorName = document.createElement("h2");
+  const colorName = document.createElement("h4");
   colorName.innerText = color.name;
 
   colorElement.appendChild(ColorCircle(color.content));
@@ -25,7 +25,7 @@ function ColorCircle(content) {
 }
 
 function HexCode(content) {
-  const hexCode = document.createElement("h2");
+  const hexCode = document.createElement("h4");
 
   hexCode.innerText = rgbToHex(content.red, content.green, content.blue);
 

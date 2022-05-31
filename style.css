@@ -1,10 +1,10 @@
 html {
   background-color: whitesmoke;
   scroll-behavior: smooth;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 
-nav{
+nav {
   background-color: yellow;
 }
 
@@ -13,7 +13,7 @@ nav img {
   height: auto;
 }
 
-*{
+* {
   padding: 0;
   margin: 0;
 }
@@ -24,8 +24,7 @@ nav img {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #101B37;
- 
+  background-color: #101b37;
 }
 
 .sidenav a {
@@ -62,11 +61,10 @@ nav img {
   margin-right: auto;
   width: 50%;
   border-radius: 7px;
-  box-shadow: 6px 6px 12px #b8b8b8,
-    -6px -6px 12px #ffffff;
-  background-color: #101B37;
+  box-shadow: 6px 6px 12px #b8b8b8, -6px -6px 12px #ffffff;
+  background-color: #101b37;
   padding: 20px;
-  margin-top:10%;
+  margin-top: 10%;
   margin-bottom: 10%;
 }
 
@@ -99,7 +97,7 @@ p {
   text-align: justify;
   line-height: 1.5;
   white-space: pre-line;
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
 }
 
 section {
@@ -115,8 +113,7 @@ section {
   margin-left: auto;
   margin-right: auto;
   border-radius: 50%;
-  box-shadow:  6px 6px 12px #b8b8b8,
-               -6px -6px 12px #ffffff;
+  box-shadow: 6px 6px 12px #b8b8b8, -6px -6px 12px #ffffff;
 }
 
 .ImagesImagery {
@@ -127,8 +124,7 @@ section {
   height: 500px;
   background-color: #293494;
   border-radius: 33px;
-  box-shadow: 23px 23px 26px #c5c5c5,
-    -23px -23px 26px #fbfbfb;
+  box-shadow: 23px 23px 26px #c5c5c5, -23px -23px 26px #fbfbfb;
 }
 
 .ImagesAE {
@@ -139,33 +135,32 @@ section {
   height: 500px;
   background-color: #293494;
   border-radius: 33px;
-  box-shadow: 23px 23px 26px #c5c5c5,
-    -23px -23px 26px #fbfbfb;
+  box-shadow: 23px 23px 26px #c5c5c5, -23px -23px 26px #fbfbfb;
 }
 
 .colortext {
   text-align: center;
   font-size: 35px;
-  font-family: 'Oswald', sans-serif
+  font-family: "Oswald", sans-serif;
 }
-.logos{
-margin: 3%;
+.logos {
+  margin: 3%;
 }
-.colorcontainer{
-display:  flex;
-flex-direction: row;
-gap: 30%;
-margin-left: 20%;
-margin-right: 20%;
+.colorcontainer {
+  display: flex;
+  flex-direction: row;
+  gap: 30%;
+  margin-left: 20%;
+  margin-right: 20%;
 }
-.Merriweather{
-  font-family: 'Merriweather', serif;
+.Merriweather {
+  font-family: "Merriweather", serif;
 }
-.oswald{
-font-family: 'Oswald', sans-serif;
+.oswald {
+  font-family: "Oswald", sans-serif;
 }
 
-#color-yellow{
+#color-yellow {
   width: 200px;
   height: 200px;
   border-radius: 50%;

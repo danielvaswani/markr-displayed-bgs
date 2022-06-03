@@ -13,15 +13,18 @@ const bgsName =
 
 const API = import.meta.env.VITE_API;
 
-fetch(`${API}/api/brandguides/${bgsName}?subdomain=true`)
+fetch(`${API}/api/brandguides/fregreg?subdomain=true`)
   //parsing the json
   .then((response) => {
-    console.log(response);
+    // console.log(response);
     return response.json();
   })
   .then((data) => {
-    console.log(data);
+    // console.log(data);
     createApp(data.pages);
+  })
+  .catch((error) => {
+    window.location = `https://${bgsName}.markrtool.nl/404`;
   });
 
 async function createApp(pages) {
@@ -38,6 +41,8 @@ async function createApp(pages) {
   }, 700);
   // await doSleep(1500) .then(()=>{
 }
+
+function updateElement(bgsName, page, elementIndex) {}
 
 function addLinkToNav(link) {
   const newPageLink = document.createElement("a");

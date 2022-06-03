@@ -13,7 +13,7 @@ const bgsName =
 
 const API = import.meta.env.VITE_API;
 
-fetch(`${API}/api/brandguides/fregreg?subdomain=true`)
+fetch(`${API}/api/brandguides/${bgsName}?subdomain=true`)
   //parsing the json
   .then((response) => {
     // console.log(response);

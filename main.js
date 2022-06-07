@@ -31,13 +31,20 @@ async function createApp(pages) {
   setTimeout(() => {
     document.getElementById("mySidenav").innerHTML = "";
 
+    const pagesContainer = document.createElement("div")
+      pagesContainer.className = "pagescontainer";
+
+
     for (const pageIndex in pages) {
       const page = pages[pageIndex];
 
       addLinkToNav(page.name);
 
-      document.body.appendChild(Page(page));
+      
+     pagesContainer.appendChild(Page(page));
+    
     }
+    document.body.appendChild(pagesContainer);
   }, 700);
   // await doSleep(1500) .then(()=>{
 }

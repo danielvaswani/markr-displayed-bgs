@@ -2,6 +2,7 @@ html {
   background-color: whitesmoke;
   scroll-behavior: smooth;
   font-family: "Oswald", sans-serif;
+  overflow-x: hidden;
 }
 
 nav {
@@ -25,6 +26,7 @@ nav img {
   top: 0;
   left: 0;
   background-color: #101b37;
+  
 }
 
 .sidenav a {
@@ -103,8 +105,9 @@ p {
 section {
   display: flex;
   flex-direction: column;
-  padding-left: 20%;
-  padding-right: 20%;
+  gap: 100px;
+  margin-left: 18%;
+  padding: 50px;
 }
 
 .color {
@@ -146,13 +149,7 @@ section {
 .logos {
   margin: 3%;
 }
-.colorcontainer {
-  display: flex;
-  flex-direction: row;
-  gap: 30%;
-  margin-left: 20%;
-  margin-right: 20%;
-}
+
 .Merriweather {
   font-family: "Merriweather", serif;
 }
@@ -166,4 +163,73 @@ section {
   border-radius: 50%;
   background-color: white;
   float: left;
+}
+
+.banner{
+  width: 600px;
+  height: auto;
+}
+
+.palletterow{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 45px;
+}
+
+.pagescontainer{
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+
+
+/* printing */
+
+@media print{
+
+  *{
+    display:block;
+}
+script, style { 
+    display:none; 
+}
+div {
+    page-break-inside:avoid;
+}
+
+  section{
+    margin-left: 0;
+    /* break-inside: avoid; */
+  }
+
+  .sidenav{
+    display: none;
+  }
+
+  /* .img{
+    max-height: none !important;
+    height: 100% !important; 
+  overflow: hidden;
+background-size: contain;
+resize: both 50%;} */
+  
+
+      #Colors{
+        margin-top: 10%;
+      }
+
+      #Typography{
+        margin-top: 20%;
+      }
+
+      #ToneofVoice{
+        margin-top: 5%;
+      }
+
+
+      .banner img{
+        width: 95%;
+        padding-top: 25%;
+      }
 }

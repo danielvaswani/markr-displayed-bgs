@@ -3,11 +3,12 @@ import VideoAsset from "./VideoAsset";
 import ImageAsset from "./ImageAsset";
 import TextAsset from "./TextAsset";
 import IFrameAsset from "./IFrameAsset";
+import ColorPalletteAsset from "./ColorPalletteAsset";
 
 function Asset(asset) {
   switch (asset.type) {
     case "color":
-      return ColorAsset(asset);
+      return ColorPalletteAsset(asset);
     case "video":
       return VideoAsset(asset);
     case "image":

@@ -3,12 +3,10 @@ import rgbToHex from "../utils";
 function ColorAsset(color) {
   const colorElement = document.createElement("div");
 
-  const colorName = document.createElement("h4");
-  colorName.innerText = color.name;
 
-  colorElement.appendChild(ColorCircle(color.content));
-  colorElement.appendChild(HexCode(color.content));
-  colorElement.appendChild(colorName);
+  colorElement.appendChild(ColorCircle(color));
+  colorElement.appendChild(HexCode(color));
+  colorElement.appendChild(ColorName(color.name));
 
   return colorElement;
 }
@@ -28,8 +26,16 @@ function HexCode(content) {
   const hexCode = document.createElement("h4");
 
   hexCode.innerText = rgbToHex(content.red, content.green, content.blue);
-
+  hexCode.style.textAlign = "center"
   return hexCode;
+}
+
+function ColorName(name){
+  const colorName = document.createElement("h4");
+  colorName.innerText = name;
+  colorName.style.textAlign = "center"
+
+  return colorName;
 }
 
 export default ColorAsset;

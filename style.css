@@ -106,7 +106,6 @@ section {
   display: flex;
   flex-direction: column;
   gap: 100px;
-  margin-left: 18%;
   padding: 50px;
 }
 
@@ -176,10 +175,12 @@ section {
   gap: 45px;
 }
 
-.pagescontainer{
+#pagescontainer{
   display: flex;
   flex-direction: column;
   gap: 80px;
+  margin-left: 18%;
+  background-color: whitesmoke;
 }
 
 
@@ -198,9 +199,14 @@ div {
     page-break-inside:avoid;
 }
 
-  section{
+  /* section{
     margin-left: 0;
-    /* break-inside: avoid; */
+    break-inside: avoid; 
+  } */
+
+  #pagescontainer{
+    margin-left: 0;
+  
   }
 
   .sidenav{
